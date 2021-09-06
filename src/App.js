@@ -21,13 +21,15 @@ function App() {
         <img src={banner} className="App-logo" alt="banner" />
         <p className="mt-5 w-50">A single-player blockchain-based RPG where you fight monsters and reclaim lost lands in a fight against evil forces.</p>
       </header>
-      <div className="py-5 bg-secondary">
-        <iframe width="835" height="505" src="https://www.youtube.com/embed/MFj-iveWSZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div className="py-5" style={{ backgroundColor: "#282c34" }}>
+        <div className="youtube-video-container container">
+          <iframe width="835" height="505" src="https://www.youtube.com/embed/MFj-iveWSZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
       <div className="bg-dark py-5">
-        <h1 className="text-light mb-5">Features</h1>
+        <h1 className="text-light my-5">Features</h1>
         <div className="d-flex justify-content-center">
-          <Carousel style={{ width: "50%" }} prevLabel={null} nextLabel={null}>
+          <Carousel style={{ maxWidth: "100%" }} prevLabel={null} nextLabel={null}>
             <Carousel.Item>
               <img
                 className="d-block w-100"
