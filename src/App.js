@@ -29,7 +29,7 @@ function App() {
       <div className="bg-dark py-5">
         <h1 className="text-light my-5">Features</h1>
         <div className="d-flex justify-content-center">
-          <Carousel style={{ maxWidth: "100%" }} prevLabel={null} nextLabel={null}>
+          <Carousel className="w-75" prevLabel={null} nextLabel={null}>
             <Carousel.Item>
               <img
                 className="d-block w-100"
